@@ -11,7 +11,6 @@ A Java-based cryptography project implementing RSA and AES encryption algorithms
 - AES encryption/decryption
 - Graphical User Interface (GUI)
 - Text encryption & decryption
-- File handling support
 - Educational implementation of cryptographic algorithms
 
 ---
@@ -28,12 +27,12 @@ A Java-based cryptography project implementing RSA and AES encryption algorithms
 ## Project Structure
 
 ```text
-ProjectMaHoa_NhapMonATTT-master/
+rsa-aes-encryption-java/
 │
 ├── src/
-│   │
 │   ├── Main/
-│   │   └── Main.java
+│   │   ├── Main.java
+│   │   └── TEST.java
 │   │
 │   ├── ThuatToan/
 │   │   ├── AES.java
@@ -41,16 +40,12 @@ ProjectMaHoa_NhapMonATTT-master/
 │   │   └── ThuatToanRSA_v2.java
 │   │
 │   └── gui/
-│       └── GUI_MaHoa.java
+│       ├── GUI_MaHoa.java
+│       └── gui_v1.java
 │
-├── build/
-│
-├── nbproject/
-│
-├── dist/
+├── screenshots/
 │
 ├── README.md
-│
 └── .gitignore
 ```
 
@@ -60,24 +55,26 @@ ProjectMaHoa_NhapMonATTT-master/
 
 1. Generate two prime numbers `p` and `q`
 2. Compute:
-   ```text
-   n = p × q
-   φ(n) = (p − 1)(q − 1)
-   ```
+
+```text
+n = p × q
+φ(n) = (p − 1)(q − 1)
+```
 
 3. Choose public key `e`
-
 4. Compute private key `d`
 
 5. Encrypt:
-   ```text
-   C = M^e mod n
-   ```
+
+```text
+C = M^e mod n
+```
 
 6. Decrypt:
-   ```text
-   M = C^d mod n
-   ```
+
+```text
+M = C^d mod n
+```
 
 ---
 
@@ -91,7 +88,7 @@ Implemented AES components include:
 - AddRoundKey
 - Key Expansion
 
-This project manually implements AES logic instead of using built-in cryptography libraries.
+This project manually implements AES logic instead of using external cryptography libraries.
 
 ---
 
@@ -102,7 +99,6 @@ The application includes a Java Swing GUI that allows users to:
 - Enter plaintext
 - Encrypt messages
 - Decrypt ciphertext
-- Load/save files
 - Interact with RSA and AES functions visually
 
 ---
@@ -112,25 +108,26 @@ The application includes a Java Swing GUI that allows users to:
 ### 1. Clone Repository
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/rsa-aes-encryption-java.git](https://github.com/hoang1711/rsa-aes-encryption-java)
+git clone https://github.com/hoang1711/rsa-aes-encryption-java.git
 ```
 
 ### 2. Open Project
 
 Recommended IDEs:
+
 - IntelliJ IDEA
 - NetBeans
 - Eclipse
 
 ### 3. Run Application
 
-Run:
+Run console version:
 
 ```text
 src/Main/Main.java
 ```
 
-or launch GUI:
+Or run GUI version:
 
 ```text
 src/gui/GUI_MaHoa.java
@@ -140,6 +137,7 @@ src/gui/GUI_MaHoa.java
 ## Educational Objectives
 
 This project was developed for learning purposes in:
+
 - Information Security
 - Cryptography fundamentals
 - RSA algorithm
@@ -166,4 +164,11 @@ This project was developed for learning purposes in:
 - Add file encryption support
 - Refactor code structure
 
+---
 
+## Author
+
+Hoang
+
+GitHub:
+https://github.com/hoang1711
