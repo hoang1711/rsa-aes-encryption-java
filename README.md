@@ -112,7 +112,7 @@ The application includes a Java Swing GUI that allows users to:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/rsa-aes-encryption-java.git
+git clone [https://github.com/YOUR_USERNAME/rsa-aes-encryption-java.git](https://github.com/hoang1711/rsa-aes-encryption-java)
 ```
 
 ### 2. Open Project
@@ -135,23 +135,6 @@ or launch GUI:
 ```text
 src/gui/GUI_MaHoa.java
 ```
-
----
-
-## Screenshots
-
-### Main GUI
-
-```md
-![GUI](screenshots/gui.png)
-```
-
-### Encryption Example
-
-```md
-![Encrypt](screenshots/encrypt.png)
-```
-
 ---
 
 ## Educational Objectives
